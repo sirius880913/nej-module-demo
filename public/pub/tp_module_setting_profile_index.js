@@ -1,0 +1,1 @@
+I$(32,function(n,i,_,s,r,o,e){var t;e.wl=n.B();t=e.wl.z(o.ea);t.Po=function(){this.G();this.Qo=i.wn(s.S_("module-id-c"));_.bi(i.un(this.Qo,"j-flag")[0],"click",this.Ll.S(this))};t.Fo=function(t){console.log("receive message from "+t.from+" and say: "+JSON.stringify(t.data))};t.Ll=function(){this.Jo("onok",{a:"aaaa",b:"bbbbb"})};r.po("setting-profile",e.wl)},3,4,30,7,5,8);

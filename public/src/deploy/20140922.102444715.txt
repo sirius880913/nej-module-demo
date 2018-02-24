@@ -1,0 +1,574 @@
+[INFO] 2014-09-22 10:24:44.723	-	parse E:/public_platform/NEJ Module Sample/src/deploy/release.conf
+[EROR] 2014-09-22 10:24:44.731	-	NEJ_DIR[E:/nej/src/] not exist!
+[INFO] 2014-09-22 10:24:44.736	-	config -> {"DIR_CONFIG":"E:/public_platform/NEJ Module Sample/src/deploy/","DIR_LOGGER":"E:/public_platform/NEJ Module Sample/src/deploy/20140922.102444715.txt","DIR_TEMPORARY":"E:/public_platform/NEJ Module Sample/src/deploy/20140922.102444715/","DIR_WEBROOT":"E:/public_platform/NEJ Module Sample/","DIR_SOURCE":"E:/public_platform/NEJ Module Sample/src/html/","DIR_OUTPUT":"E:/public_platform/NEJ Module Sample/pub/","NEJ_DIR":"","FILE_SUFFIXE":{},"DIR_SOURCE_TP":"","DIR_OUTPUT_TP":"","DIR_OUTPUT_STATIC":"E:/public_platform/NEJ Module Sample/pub/","DIR_STATIC":"E:/public_platform/NEJ Module Sample/res/","NEJ_PLATFORM":"","ALIAS_DICTIONARY":{},"ALIAS_START_TAG":"${","ALIAS_END_TAG":"}","ALIAS_REG":{},"MANIFEST_OUTPUT":"","MANIFEST_FILTER":"","MANIFEST_TEMPLATE":"CACHE MANIFEST\n#VERSION = #<VERSION>\n\nCACHE:\n#<CACHE_LIST>\n\nNETWORK:\n*\n\nFALLBACK:","FILE_FILTER":{},"FILE_CHARSET":"utf-8","RAND_VERSION":false,"STATIC_VERSION":false,"OPT_IMAGE_FLAG":false,"OPT_IMAGE_QUALITY":100,"X_NOCOMPRESS":false,"X_NOPARSE_FLAG":0,"X_NOCORE_STYLE":false,"X_NOCORE_SCRIPT":false,"X_NOT_CLEAR_TEMP":false,"X_AUTO_EXLINK_PATH":false,"X_MODULE_WRAPPER":"%s","X_RELEASE_MODE":"online","DM_STATIC_CS":"/","DM_STATIC_JS":"/","DM_STATIC_MF":"/","DM_STATIC_MR":"","DM_STATIC_RR":true,"DM_STATIC":"/","DM_STATIC_CS_RR":true,"DM_STATIC_JS_RR":true,"DM_STATIC_MF_RR":true,"DIR_STATIC_REG":{},"OBF_LEVEL":3,"OBF_MAX_CS_INLINE_SIZE":50,"OBF_MAX_JS_INLINE_SIZE":0,"OBF_NAME_BAGS":"E:/public_platform/NEJ Module Sample/src/deploy/names.json","OBF_COMPATIBLE":true,"OBF_SOURCE_MAP":false,"CORE_LIST_JS":"","CORE_LIST_CS":"","CORE_MASK_JS":"","CORE_MASK_CS":""}
+[INFO] 2014-09-22 10:24:44.741	-	parse E:/public_platform/NEJ Module Sample/src/html/app.html
+[DBUG] 2014-09-22 10:24:44.805	-	E:/public_platform/NEJ Module Sample/src/html/app.html -> ["window.NEJ_CONF = {root:'../../res/'};","NEJ.define([\n'util/dispatcher/dispatcher'\n],function(_t){\n/* start up dispatcher */\n_t._$startup({\nrules:{\nrewrite:{\n'404':'/m/blog/list/',\n'/m/blog/list/':'/m/blog/',\n'/m/setting/account/':'/m/setting/'\n},\ntitle:{\n'/m/blog/tag/':'日志标签',\n'/m/blog/list/':'日志列表',\n'/m/setting/permission/':'权限管理',\n'/m/setting/account/':'基本资料',\n'/m/setting/account/edu/':'教育经历'\n},\nalias:{\n'system-tab':'/?/tab/',\n'blog-tab':'/?/blog/tab/',\n'blog-list-box':'/?/blog/box/',\n'blog-list-tag':'/?/blog/tag/',\n'blog-list':'/?/blog/list/',\n'setting-tab':'/?/setting/tab/',\n'setting-account-tab':'/?/setting/account/tab/',\n\n'layout-system':'/m',\n'layout-blog':'/m/blog',\n'layout-blog-list':'/m/blog/list/',\n'layout-setting':'/m/setting',\n'layout-setting-account':'/m/setting/account',\n\n'blog-tag':['/m/blog/tag/','/m/setting/tag/'],\n'setting-edu':'/m/setting/account/edu/',\n'setting-profile':'/m/setting/account/',\n'setting-permission':'/m/setting/permission/'\n}\n},\nmodules:{\n'/?/tab/':'module/tab/index.html',\n'/?/blog/tab/':'module/blog/tab/index.html',\n'/?/blog/box/':'module/blog/list.box/index.html',\n'/?/blog/tag/':'module/blog/list.tag/index.html',\n'/?/blog/list/':'module/blog/list/index.html',\n'/?/setting/tab/':'module/setting/tab/index.html',\n'/?/setting/account/tab/':'module/setting/account.tab/index.html',\n\n'/m':{\nmodule:'module/layout/system/index.html',\ncomposite:{\ntab:'/?/tab/'\n}\n},\n'/m/blog':{\nmodule:'module/layout/blog/index.html',\ncomposite:{\ntab:'/?/blog/tab/'\n}\n},\n'/m/blog/list/':{\nmodule:'module/layout/blog.list/index.html',\ncomposite:{\nbox:'/?/blog/box/',\ntag:'/?/blog/tag/',\nlist:'/?/blog/list/'\n}\n},\n'/m/blog/tag/':'module/blog/tag/index.html',\n\n'/m/setting':{\nmodule:'module/layout/setting/index.html',\ncomposite:{\ntab:'/?/setting/tab/'\n}\n},\n'/m/setting/account':{\nmodule:'module/layout/setting.account/index.html',\ncomposite:{\ntab:'/?/setting/account/tab/'\n}\n},\n'/m/setting/account/':'module/setting/profile/index.html',\n'/m/setting/account/edu/':'module/setting/edu/index.html',\n'/m/setting/permission/':'module/setting/permission/index.html',\n'/m/setting/tag/':'module/blog/tag/index.html'\n},\n/*\nmodules:{\n'/?/tab/':'module/tab/index.html',\n'/?/blog/tab/':'module/blog.html',\n'/?/blog/box/':'module/blog.html',\n'/?/blog/tag/':'module/blog.html',\n'/?/blog/list/':'module/blog.html',\n'/?/setting/tab/':'module/setting.html',\n'/?/setting/account/tab/':'module/setting.html',\n\n'/m':{\nmodule:'module/layout.html',\ncomposite:{\ntab:'/?/tab/'\n}\n},\n'/m/blog':{\nmodule:'module/layout.html',\ncomposite:{\ntab:'/?/blog/tab/'\n}\n},\n'/m/blog/list/':{\nmodule:'module/layout.html',\ncomposite:{\nbox:'/?/blog/box/',\ntag:'/?/blog/tag/',\nlist:'/?/blog/list/'\n}\n},\n'/m/blog/tag/':'module/blog.html',\n\n'/m/setting':{\nmodule:'module/layout.html',\ncomposite:{\ntab:'/?/setting/tab/'\n}\n},\n'/m/setting/account':{\nmodule:'module/layout.html',\ncomposite:{\ntab:'/?/setting/account/tab/'\n}\n},\n'/m/setting/account/':'module/setting.html',\n'/m/setting/account/edu/':'module/setting.html',\n'/m/setting/permission/':'module/setting.html'\n},\n*/\nonbeforechange:function(_options){\nvar _umi = _options.path||'';\nif (!!_umi&&\n_umi.indexOf('/?')<0&&\n_umi.indexOf('/m')<0)\n_options.path = '/m'+_umi;\n}\n});\n});"]
+[INFO] 2014-09-22 10:24:44.835	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html
+[DBUG] 2014-09-22 10:24:44.859	-	E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.js"]
+[INFO] 2014-09-22 10:24:44.865	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.html
+[DBUG] 2014-09-22 10:24:44.875	-	E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.js"]
+[INFO] 2014-09-22 10:24:44.879	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.html
+[DBUG] 2014-09-22 10:24:44.906	-	E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.js"]
+[INFO] 2014-09-22 10:24:44.910	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.html
+[DBUG] 2014-09-22 10:24:44.918	-	E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.js"]
+[INFO] 2014-09-22 10:24:44.923	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html
+[DBUG] 2014-09-22 10:24:44.958	-	E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.js"]
+[INFO] 2014-09-22 10:24:44.962	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog.html
+[WARN] 2014-09-22 10:24:44.969	-	external template not exist -> E:/public_platform/NEJ Module Sample/src/html/module/blog/list.class/index.html
+[DBUG] 2014-09-22 10:24:44.972	-	E:/public_platform/NEJ Module Sample/src/html/module/blog.html -> undefined
+[INFO] 2014-09-22 10:24:44.977	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.html
+[DBUG] 2014-09-22 10:24:44.985	-	E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.js"]
+[INFO] 2014-09-22 10:24:44.990	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.html
+[DBUG] 2014-09-22 10:24:44.994	-	E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.js"]
+[INFO] 2014-09-22 10:24:45.0	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.html
+[DBUG] 2014-09-22 10:24:45.6	-	E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.js"]
+[INFO] 2014-09-22 10:24:45.10	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.html
+[DBUG] 2014-09-22 10:24:45.18	-	E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.js"]
+[INFO] 2014-09-22 10:24:45.22	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.html
+[DBUG] 2014-09-22 10:24:45.28	-	E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.js"]
+[INFO] 2014-09-22 10:24:45.33	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout.html
+[DBUG] 2014-09-22 10:24:45.38	-	E:/public_platform/NEJ Module Sample/src/html/module/layout.html -> undefined
+[INFO] 2014-09-22 10:24:45.42	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.html
+[DBUG] 2014-09-22 10:24:45.66	-	E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.js"]
+[INFO] 2014-09-22 10:24:45.71	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.html
+[DBUG] 2014-09-22 10:24:45.98	-	E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.js"]
+[INFO] 2014-09-22 10:24:45.103	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.html
+[DBUG] 2014-09-22 10:24:45.136	-	E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.js"]
+[INFO] 2014-09-22 10:24:45.140	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.html
+[DBUG] 2014-09-22 10:24:45.151	-	E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.js"]
+[INFO] 2014-09-22 10:24:45.155	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.html
+[DBUG] 2014-09-22 10:24:45.162	-	E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.js"]
+[INFO] 2014-09-22 10:24:45.167	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting.html
+[DBUG] 2014-09-22 10:24:45.173	-	E:/public_platform/NEJ Module Sample/src/html/module/setting.html -> undefined
+[INFO] 2014-09-22 10:24:45.180	-	parse E:/public_platform/NEJ Module Sample/src/html/module/tab/index.html
+[DBUG] 2014-09-22 10:24:45.187	-	E:/public_platform/NEJ Module Sample/src/html/module/tab/index.html -> ["E:/public_platform/NEJ Module Sample/src/html/module/tab/index.js"]
+[WARN] 2014-09-22 10:24:45.192	-	see uri as js source code -> window.NEJ_CONF = {root:'../../res/'}; ...
+[DBUG] 2014-09-22 10:24:45.198	-	dependency result: js-code-1411352685191 -> undefined
+[WARN] 2014-09-22 10:24:45.202	-	see uri as js source code -> NEJ.define([ 'util/dispatcher/dispatcher' ],function(_t){ /* start up dispatcher */ _t._$startup({ r ...
+[DBUG] 2014-09-22 10:24:45.207	-	dependency result: js-code-1411352685192 -> ["http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dispatcher.js"]
+[DBUG] 2014-09-22 10:24:45.211	-	map http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dispatcher.js -> 1411352685194.js
+[INFO] 2014-09-22 10:24:45.215	-	downloading http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dispatcher.js
+[INFO] 2014-09-22 10:24:45.233	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.js
+[DBUG] 2014-09-22 10:24:45.255	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","http://fed.hz.netease.com/git/nej2/src/util/list/page.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js","E:/public_platform/NEJ Module Sample/src/javascript/cache/blog.js"]
+[DBUG] 2014-09-22 10:24:45.259	-	map http://fed.hz.netease.com/git/nej2/src/base/klass.js -> 1411352685195.js
+[INFO] 2014-09-22 10:24:45.263	-	downloading http://fed.hz.netease.com/git/nej2/src/base/klass.js
+[DBUG] 2014-09-22 10:24:45.269	-	map http://fed.hz.netease.com/git/nej2/src/base/element.js -> 1411352685196.js
+[INFO] 2014-09-22 10:24:45.272	-	downloading http://fed.hz.netease.com/git/nej2/src/base/element.js
+[DBUG] 2014-09-22 10:24:45.276	-	map http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js -> 1411352685197.js
+[INFO] 2014-09-22 10:24:45.282	-	downloading http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js
+[DBUG] 2014-09-22 10:24:45.287	-	map http://fed.hz.netease.com/git/nej2/src/util/list/page.js -> 1411352685198.js
+[INFO] 2014-09-22 10:24:45.292	-	downloading http://fed.hz.netease.com/git/nej2/src/util/list/page.js
+[DBUG] 2014-09-22 10:24:45.299	-	map http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js -> 1411352685199.js
+[INFO] 2014-09-22 10:24:45.304	-	downloading http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js
+[INFO] 2014-09-22 10:24:45.334	-	parse E:/public_platform/NEJ Module Sample/src/javascript/module/module.js
+[DBUG] 2014-09-22 10:24:45.349	-	dependency result: E:/public_platform/NEJ Module Sample/src/javascript/module/module.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js"]
+[INFO] 2014-09-22 10:24:45.353	-	parse E:/public_platform/NEJ Module Sample/src/javascript/cache/blog.js
+[DBUG] 2014-09-22 10:24:45.362	-	dependency result: E:/public_platform/NEJ Module Sample/src/javascript/cache/blog.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/xdr.js","E:/public_platform/NEJ Module Sample/src/javascript/cache/cache.js"]
+[DBUG] 2014-09-22 10:24:45.366	-	map http://fed.hz.netease.com/git/nej2/src/base/util.js -> 1411352685200.js
+[INFO] 2014-09-22 10:24:45.371	-	downloading http://fed.hz.netease.com/git/nej2/src/base/util.js
+[DBUG] 2014-09-22 10:24:45.375	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/xdr.js -> 1411352685201.js
+[INFO] 2014-09-22 10:24:45.379	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/xdr.js
+[INFO] 2014-09-22 10:24:45.384	-	parse E:/public_platform/NEJ Module Sample/src/javascript/cache/cache.js
+[DBUG] 2014-09-22 10:24:45.392	-	dependency result: E:/public_platform/NEJ Module Sample/src/javascript/cache/cache.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/util/cache/abstract.js"]
+[DBUG] 2014-09-22 10:24:45.396	-	map http://fed.hz.netease.com/git/nej2/src/util/cache/abstract.js -> 1411352685202.js
+[INFO] 2014-09-22 10:24:45.399	-	downloading http://fed.hz.netease.com/git/nej2/src/util/cache/abstract.js
+[INFO] 2014-09-22 10:24:45.404	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.js
+[DBUG] 2014-09-22 10:24:45.420	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/tab/view.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[DBUG] 2014-09-22 10:24:45.424	-	map http://fed.hz.netease.com/git/nej2/src/util/tab/view.js -> 1411352685203.js
+[INFO] 2014-09-22 10:24:45.428	-	downloading http://fed.hz.netease.com/git/nej2/src/util/tab/view.js
+[INFO] 2014-09-22 10:24:45.433	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.js
+[DBUG] 2014-09-22 10:24:45.451	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/tab/view.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/template/jst.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js","E:/public_platform/NEJ Module Sample/src/javascript/cache/blog.js"]
+[DBUG] 2014-09-22 10:24:45.455	-	map http://fed.hz.netease.com/git/nej2/src/util/template/jst.js -> 1411352685204.js
+[INFO] 2014-09-22 10:24:45.459	-	downloading http://fed.hz.netease.com/git/nej2/src/util/template/jst.js
+[INFO] 2014-09-22 10:24:45.463	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.js
+[DBUG] 2014-09-22 10:24:45.472	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/tab/view.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.477	-	parse E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.js
+[DBUG] 2014-09-22 10:24:45.489	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","http://fed.hz.netease.com/git/nej2/src/util/list/waterfall.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js","E:/public_platform/NEJ Module Sample/src/javascript/cache/tag.js"]
+[DBUG] 2014-09-22 10:24:45.493	-	map http://fed.hz.netease.com/git/nej2/src/util/list/waterfall.js -> 1411352685205.js
+[INFO] 2014-09-22 10:24:45.496	-	downloading http://fed.hz.netease.com/git/nej2/src/util/list/waterfall.js
+[INFO] 2014-09-22 10:24:45.502	-	parse E:/public_platform/NEJ Module Sample/src/javascript/cache/tag.js
+[DBUG] 2014-09-22 10:24:45.509	-	dependency result: E:/public_platform/NEJ Module Sample/src/javascript/cache/tag.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/xdr.js","E:/public_platform/NEJ Module Sample/src/javascript/cache/cache.js"]
+[INFO] 2014-09-22 10:24:45.513	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.js
+[DBUG] 2014-09-22 10:24:45.525	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.529	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.js
+[DBUG] 2014-09-22 10:24:45.537	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.541	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.js
+[DBUG] 2014-09-22 10:24:45.563	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.569	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.js
+[DBUG] 2014-09-22 10:24:45.596	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.600	-	parse E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.js
+[DBUG] 2014-09-22 10:24:45.617	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.621	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.js
+[DBUG] 2014-09-22 10:24:45.630	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/tab/view.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.635	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.js
+[DBUG] 2014-09-22 10:24:45.648	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.652	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.js
+[DBUG] 2014-09-22 10:24:45.667	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[DBUG] 2014-09-22 10:24:45.672	-	map http://fed.hz.netease.com/git/nej2/src/base/event.js -> 1411352685206.js
+[INFO] 2014-09-22 10:24:45.675	-	downloading http://fed.hz.netease.com/git/nej2/src/base/event.js
+[INFO] 2014-09-22 10:24:45.679	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.js
+[DBUG] 2014-09-22 10:24:45.716	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.721	-	parse E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.js
+[DBUG] 2014-09-22 10:24:45.728	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/tab/view.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[INFO] 2014-09-22 10:24:45.733	-	parse E:/public_platform/NEJ Module Sample/src/html/module/tab/index.js
+[DBUG] 2014-09-22 10:24:45.740	-	dependency result: E:/public_platform/NEJ Module Sample/src/html/module/tab/index.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/tab/view.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js"]
+[DBUG] 2014-09-22 10:24:45.983	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/klass.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/platform/util.js"]
+[DBUG] 2014-09-22 10:24:45.989	-	map http://fed.hz.netease.com/git/nej2/src/base/global.js -> 1411352685207.js
+[INFO] 2014-09-22 10:24:45.994	-	downloading http://fed.hz.netease.com/git/nej2/src/base/global.js
+[DBUG] 2014-09-22 10:24:46.0	-	map http://fed.hz.netease.com/git/nej2/src/base/platform/util.js -> 1411352685208.js
+[INFO] 2014-09-22 10:24:46.3	-	downloading http://fed.hz.netease.com/git/nej2/src/base/platform/util.js
+[DBUG] 2014-09-22 10:24:46.13	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/event.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dispatcher.js"]
+[DBUG] 2014-09-22 10:24:46.19	-	map http://fed.hz.netease.com/git/nej2/src/util/event.js -> 1411352685209.js
+[INFO] 2014-09-22 10:24:46.22	-	downloading http://fed.hz.netease.com/git/nej2/src/util/event.js
+[DBUG] 2014-09-22 10:24:46.31	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/element.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/constant.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/chain.js","http://fed.hz.netease.com/git/nej2/src/base/platform/element.js"]
+[DBUG] 2014-09-22 10:24:46.35	-	map http://fed.hz.netease.com/git/nej2/src/base/constant.js -> 1411352685210.js
+[INFO] 2014-09-22 10:24:46.39	-	downloading http://fed.hz.netease.com/git/nej2/src/base/constant.js
+[DBUG] 2014-09-22 10:24:46.44	-	map http://fed.hz.netease.com/git/nej2/src/base/chain.js -> 1411352685211.js
+[INFO] 2014-09-22 10:24:46.49	-	downloading http://fed.hz.netease.com/git/nej2/src/base/chain.js
+[DBUG] 2014-09-22 10:24:46.54	-	map http://fed.hz.netease.com/git/nej2/src/base/platform/element.js -> 1411352685212.js
+[INFO] 2014-09-22 10:24:46.57	-	downloading http://fed.hz.netease.com/git/nej2/src/base/platform/element.js
+[DBUG] 2014-09-22 10:24:46.65	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dispatcher.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/history/history.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/event.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/util.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/node.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/group.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/single.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js"]
+[DBUG] 2014-09-22 10:24:46.70	-	map http://fed.hz.netease.com/git/nej2/src/util/history/history.js -> 1411352685213.js
+[INFO] 2014-09-22 10:24:46.75	-	downloading http://fed.hz.netease.com/git/nej2/src/util/history/history.js
+[DBUG] 2014-09-22 10:24:46.81	-	map http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/util.js -> 1411352685214.js
+[INFO] 2014-09-22 10:24:46.85	-	downloading http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/util.js
+[DBUG] 2014-09-22 10:24:46.89	-	map http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/node.js -> 1411352685215.js
+[INFO] 2014-09-22 10:24:46.93	-	downloading http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/node.js
+[DBUG] 2014-09-22 10:24:46.98	-	map http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/group.js -> 1411352685216.js
+[INFO] 2014-09-22 10:24:46.102	-	downloading http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/group.js
+[DBUG] 2014-09-22 10:24:46.106	-	map http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/single.js -> 1411352685217.js
+[INFO] 2014-09-22 10:24:46.110	-	downloading http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/single.js
+[DBUG] 2014-09-22 10:24:46.115	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/template/jst.js","http://fed.hz.netease.com/git/nej2/src/util/event/event.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/tag.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/xdr.js","http://fed.hz.netease.com/git/nej2/src/base/chain.js"]
+[DBUG] 2014-09-22 10:24:46.122	-	map http://fed.hz.netease.com/git/nej2/src/util/event/event.js -> 1411352685218.js
+[INFO] 2014-09-22 10:24:46.126	-	downloading http://fed.hz.netease.com/git/nej2/src/util/event/event.js
+[DBUG] 2014-09-22 10:24:46.133	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/tag.js -> 1411352685219.js
+[INFO] 2014-09-22 10:24:46.137	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/tag.js
+[DBUG] 2014-09-22 10:24:46.144	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/list/page.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/list/module.js"]
+[DBUG] 2014-09-22 10:24:46.148	-	map http://fed.hz.netease.com/git/nej2/src/util/list/module.js -> 1411352685220.js
+[INFO] 2014-09-22 10:24:46.154	-	downloading http://fed.hz.netease.com/git/nej2/src/util/list/module.js
+[DBUG] 2014-09-22 10:24:46.160	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/xdr.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/constant.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/xhr.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/xdr.js"]
+[DBUG] 2014-09-22 10:24:46.164	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/xhr.js -> 1411352685221.js
+[INFO] 2014-09-22 10:24:46.168	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/xhr.js
+[DBUG] 2014-09-22 10:24:46.173	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/xdr.js -> 1411352685222.js
+[INFO] 2014-09-22 10:24:46.176	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/xdr.js
+[DBUG] 2014-09-22 10:24:46.185	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/util.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/platform/util.js"]
+[DBUG] 2014-09-22 10:24:46.189	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/tab/view.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/event.js"]
+[DBUG] 2014-09-22 10:24:46.193	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/template/jst.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/chain.js","http://fed.hz.netease.com/git/nej2/src/util/template/trimpath.js"]
+[DBUG] 2014-09-22 10:24:46.198	-	map http://fed.hz.netease.com/git/nej2/src/util/template/trimpath.js -> 1411352685223.js
+[INFO] 2014-09-22 10:24:46.203	-	downloading http://fed.hz.netease.com/git/nej2/src/util/template/trimpath.js
+[DBUG] 2014-09-22 10:24:46.207	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/cache/abstract.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/util/cache/list.js"]
+[DBUG] 2014-09-22 10:24:46.211	-	map http://fed.hz.netease.com/git/nej2/src/util/cache/list.js -> 1411352685224.js
+[INFO] 2014-09-22 10:24:46.215	-	downloading http://fed.hz.netease.com/git/nej2/src/util/cache/list.js
+[DBUG] 2014-09-22 10:24:46.221	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/list/waterfall.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/list/module.js"]
+[DBUG] 2014-09-22 10:24:46.227	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/event.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/chain.js","http://fed.hz.netease.com/git/nej2/src/base/platform/event.js"]
+[DBUG] 2014-09-22 10:24:46.234	-	map http://fed.hz.netease.com/git/nej2/src/base/platform/event.js -> 1411352685225.js
+[INFO] 2014-09-22 10:24:46.238	-	downloading http://fed.hz.netease.com/git/nej2/src/base/platform/event.js
+[DBUG] 2014-09-22 10:24:46.242	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/global.js -> null
+[DBUG] 2014-09-22 10:24:46.294	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/platform/util.js -> null
+[DBUG] 2014-09-22 10:24:46.378	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/platform/element.js -> ["http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/platform.js"]
+[DBUG] 2014-09-22 10:24:46.382	-	map http://fed.hz.netease.com/git/nej2/src/base/platform.js -> 1411352685226.js
+[INFO] 2014-09-22 10:24:46.386	-	downloading http://fed.hz.netease.com/git/nej2/src/base/platform.js
+[DBUG] 2014-09-22 10:24:46.402	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/history/history.js -> ["http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/platform.js","http://fed.hz.netease.com/git/nej2/src/util/event/event.js","http://fed.hz.netease.com/git/nej2/src/util/timer/animation.js","http://fed.hz.netease.com/git/nej2/src/util/history/platform/history.js"]
+[DBUG] 2014-09-22 10:24:46.406	-	map http://fed.hz.netease.com/git/nej2/src/util/timer/animation.js -> 1411352685227.js
+[INFO] 2014-09-22 10:24:46.410	-	downloading http://fed.hz.netease.com/git/nej2/src/util/timer/animation.js
+[DBUG] 2014-09-22 10:24:46.415	-	map http://fed.hz.netease.com/git/nej2/src/util/history/platform/history.js -> 1411352685228.js
+[INFO] 2014-09-22 10:24:46.419	-	downloading http://fed.hz.netease.com/git/nej2/src/util/history/platform/history.js
+[DBUG] 2014-09-22 10:24:46.425	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/event.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/util.js"]
+[DBUG] 2014-09-22 10:24:46.430	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/util.js -> ["http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/node.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js"]
+[DBUG] 2014-09-22 10:24:46.435	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/constant.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/config.js"]
+[DBUG] 2014-09-22 10:24:46.439	-	map http://fed.hz.netease.com/git/nej2/src/base/config.js -> 1411352685229.js
+[INFO] 2014-09-22 10:24:46.442	-	downloading http://fed.hz.netease.com/git/nej2/src/base/config.js
+[DBUG] 2014-09-22 10:24:46.448	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/node.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/event.js"]
+[DBUG] 2014-09-22 10:24:46.452	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/chain.js -> ["http://fed.hz.netease.com/git/nej2/src/base/util.js"]
+[DBUG] 2014-09-22 10:24:46.457	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/single.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/util.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/group.js"]
+[DBUG] 2014-09-22 10:24:46.462	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/group.js -> ["http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/constant.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/tag.js","http://fed.hz.netease.com/git/nej2/src/util/event.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/util.js"]
+[DBUG] 2014-09-22 10:24:46.471	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/event/event.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/event.js"]
+[DBUG] 2014-09-22 10:24:46.475	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/tag.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/text.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/html.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/style.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/script.js"]
+[DBUG] 2014-09-22 10:24:46.479	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/text.js -> 1411352685230.js
+[INFO] 2014-09-22 10:24:46.484	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/text.js
+[DBUG] 2014-09-22 10:24:46.489	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/html.js -> 1411352685231.js
+[INFO] 2014-09-22 10:24:46.493	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/html.js
+[DBUG] 2014-09-22 10:24:46.498	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/style.js -> 1411352685232.js
+[INFO] 2014-09-22 10:24:46.502	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/style.js
+[DBUG] 2014-09-22 10:24:46.506	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/script.js -> 1411352685233.js
+[INFO] 2014-09-22 10:24:46.509	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/script.js
+[DBUG] 2014-09-22 10:24:46.516	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/list/module.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/ui/item/list.js","http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.js","http://fed.hz.netease.com/git/nej2/src/util/event.js","http://fed.hz.netease.com/git/nej2/src/util/template/jst.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/cache/list.js"]
+[DBUG] 2014-09-22 10:24:46.521	-	map http://fed.hz.netease.com/git/nej2/src/ui/item/list.js -> 1411352685234.js
+[INFO] 2014-09-22 10:24:46.525	-	downloading http://fed.hz.netease.com/git/nej2/src/ui/item/list.js
+[DBUG] 2014-09-22 10:24:46.530	-	map http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.js -> 1411352685235.js
+[INFO] 2014-09-22 10:24:46.534	-	downloading http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.js
+[DBUG] 2014-09-22 10:24:46.539	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/xhr.js -> ["http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/proxy.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/constant.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/platform/xhr.js"]
+[DBUG] 2014-09-22 10:24:46.543	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/proxy.js -> 1411352685236.js
+[INFO] 2014-09-22 10:24:46.547	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/proxy.js
+[DBUG] 2014-09-22 10:24:46.551	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/platform/xhr.js -> 1411352685237.js
+[INFO] 2014-09-22 10:24:46.555	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/platform/xhr.js
+[DBUG] 2014-09-22 10:24:46.560	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/xdr.js -> ["http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/xhr.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/flash.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/frame.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/upload.js"]
+[DBUG] 2014-09-22 10:24:46.564	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/flash.js -> 1411352685238.js
+[INFO] 2014-09-22 10:24:46.569	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/flash.js
+[DBUG] 2014-09-22 10:24:46.573	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/frame.js -> 1411352685239.js
+[INFO] 2014-09-22 10:24:46.576	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/frame.js
+[DBUG] 2014-09-22 10:24:46.581	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/upload.js -> 1411352685240.js
+[INFO] 2014-09-22 10:24:46.585	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/upload.js
+[DBUG] 2014-09-22 10:24:46.589	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/template/trimpath.js -> undefined
+[DBUG] 2014-09-22 10:24:46.594	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/platform/event.js -> ["http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/platform.js"]
+[DBUG] 2014-09-22 10:24:46.600	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/cache/list.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/cache/cache.js"]
+[DBUG] 2014-09-22 10:24:46.604	-	map http://fed.hz.netease.com/git/nej2/src/util/cache/cache.js -> 1411352685241.js
+[INFO] 2014-09-22 10:24:46.608	-	downloading http://fed.hz.netease.com/git/nej2/src/util/cache/cache.js
+[DBUG] 2014-09-22 10:24:46.623	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/platform.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js"]
+[DBUG] 2014-09-22 10:24:46.785	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/history/platform/history.js -> null
+[DBUG] 2014-09-22 10:24:46.795	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/timer/animation.js -> ["http://fed.hz.netease.com/git/nej2/src/base/platform.js","http://fed.hz.netease.com/git/nej2/src/util/timer/platform/animation.js"]
+[DBUG] 2014-09-22 10:24:46.799	-	map http://fed.hz.netease.com/git/nej2/src/util/timer/platform/animation.js -> 1411352685242.js
+[INFO] 2014-09-22 10:24:46.804	-	downloading http://fed.hz.netease.com/git/nej2/src/util/timer/platform/animation.js
+[DBUG] 2014-09-22 10:24:46.810	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/config.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/platform/config.js"]
+[DBUG] 2014-09-22 10:24:46.814	-	map http://fed.hz.netease.com/git/nej2/src/base/platform/config.js -> 1411352685243.js
+[INFO] 2014-09-22 10:24:46.819	-	downloading http://fed.hz.netease.com/git/nej2/src/base/platform/config.js
+[DBUG] 2014-09-22 10:24:46.824	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/text.js -> ["http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/loader.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/xdr.js"]
+[DBUG] 2014-09-22 10:24:46.828	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/loader.js -> 1411352685244.js
+[INFO] 2014-09-22 10:24:46.832	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/loader.js
+[DBUG] 2014-09-22 10:24:46.837	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/style.js -> ["http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/loader.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js"]
+[DBUG] 2014-09-22 10:24:46.857	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/html.js -> ["http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/loader.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/platform/html.js"]
+[DBUG] 2014-09-22 10:24:46.861	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/platform/html.js -> 1411352685245.js
+[INFO] 2014-09-22 10:24:46.865	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/platform/html.js
+[DBUG] 2014-09-22 10:24:46.870	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/script.js -> ["http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/loader.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js"]
+[DBUG] 2014-09-22 10:24:46.876	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/proxy.js -> ["http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/config.js","http://fed.hz.netease.com/git/nej2/src/base/constant.js","http://fed.hz.netease.com/git/nej2/src/util/event.js","http://fed.hz.netease.com/git/nej2/src/util/cache/cookie.js","http://fed.hz.netease.com/git/nej2/src/util/encode/json.js"]
+[DBUG] 2014-09-22 10:24:46.880	-	map http://fed.hz.netease.com/git/nej2/src/util/cache/cookie.js -> 1411352685246.js
+[INFO] 2014-09-22 10:24:46.885	-	downloading http://fed.hz.netease.com/git/nej2/src/util/cache/cookie.js
+[DBUG] 2014-09-22 10:24:46.890	-	map http://fed.hz.netease.com/git/nej2/src/util/encode/json.js -> 1411352685247.js
+[INFO] 2014-09-22 10:24:46.894	-	downloading http://fed.hz.netease.com/git/nej2/src/util/encode/json.js
+[DBUG] 2014-09-22 10:24:46.901	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/platform/xhr.js -> null
+[DBUG] 2014-09-22 10:24:46.906	-	dependency result: http://fed.hz.netease.com/git/nej2/src/ui/item/list.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/ui/item/item.js"]
+[DBUG] 2014-09-22 10:24:46.911	-	map http://fed.hz.netease.com/git/nej2/src/ui/item/item.js -> 1411352685248.js
+[INFO] 2014-09-22 10:24:46.915	-	downloading http://fed.hz.netease.com/git/nej2/src/ui/item/item.js
+[DBUG] 2014-09-22 10:24:46.922	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/flash.js -> ["http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/proxy.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/config.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/flash/flash.js"]
+[DBUG] 2014-09-22 10:24:46.927	-	map http://fed.hz.netease.com/git/nej2/src/util/flash/flash.js -> 1411352685249.js
+[INFO] 2014-09-22 10:24:46.932	-	downloading http://fed.hz.netease.com/git/nej2/src/util/flash/flash.js
+[DBUG] 2014-09-22 10:24:46.937	-	dependency result: http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.base.js","http://fed.hz.netease.com/git/nej2/src/util/page/page.js"]
+[DBUG] 2014-09-22 10:24:46.941	-	map http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.base.js -> 1411352685250.js
+[INFO] 2014-09-22 10:24:46.945	-	downloading http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.base.js
+[DBUG] 2014-09-22 10:24:46.950	-	map http://fed.hz.netease.com/git/nej2/src/util/page/page.js -> 1411352685251.js
+[INFO] 2014-09-22 10:24:46.954	-	downloading http://fed.hz.netease.com/git/nej2/src/util/page/page.js
+[DBUG] 2014-09-22 10:24:46.958	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/frame.js -> ["http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/proxy.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/config.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/message.js"]
+[DBUG] 2014-09-22 10:24:46.963	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/message.js -> 1411352685252.js
+[INFO] 2014-09-22 10:24:46.968	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/message.js
+[DBUG] 2014-09-22 10:24:46.973	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/upload.js -> ["http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/proxy.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/constant.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/xdr.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/message.js"]
+[DBUG] 2014-09-22 10:24:46.978	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/cache/cache.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/event.js","http://fed.hz.netease.com/git/nej2/src/util/cache/storage.js"]
+[DBUG] 2014-09-22 10:24:46.984	-	map http://fed.hz.netease.com/git/nej2/src/util/cache/storage.js -> 1411352685253.js
+[INFO] 2014-09-22 10:24:46.988	-	downloading http://fed.hz.netease.com/git/nej2/src/util/cache/storage.js
+[DBUG] 2014-09-22 10:24:47.13	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/timer/platform/animation.js -> ["http://fed.hz.netease.com/git/nej2/src/base/platform.js"]
+[DBUG] 2014-09-22 10:24:47.83	-	dependency result: http://fed.hz.netease.com/git/nej2/src/base/platform/config.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/util.js"]
+[DBUG] 2014-09-22 10:24:47.88	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/loader.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/constant.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/event.js"]
+[DBUG] 2014-09-22 10:24:47.150	-	dependency result: http://fed.hz.netease.com/git/nej2/src/ui/item/item.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/ui/base.js"]
+[DBUG] 2014-09-22 10:24:47.154	-	map http://fed.hz.netease.com/git/nej2/src/ui/base.js -> 1411352685254.js
+[INFO] 2014-09-22 10:24:47.158	-	downloading http://fed.hz.netease.com/git/nej2/src/ui/base.js
+[DBUG] 2014-09-22 10:24:47.162	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/platform/html.js -> ["http://fed.hz.netease.com/git/nej2/src/base/element.js"]
+[DBUG] 2014-09-22 10:24:47.168	-	dependency result: http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.base.js -> ["http://fed.hz.netease.com/git/nej2/src/ui/pager/base.js"]
+[DBUG] 2014-09-22 10:24:47.172	-	map http://fed.hz.netease.com/git/nej2/src/ui/pager/base.js -> 1411352685255.js
+[INFO] 2014-09-22 10:24:47.175	-	downloading http://fed.hz.netease.com/git/nej2/src/ui/pager/base.js
+[DBUG] 2014-09-22 10:24:47.215	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/flash/flash.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/template/jst.js","http://fed.hz.netease.com/git/nej2/src/util/timer/animation.js","http://fed.hz.netease.com/git/nej2/src/util/flash/platform/flash.js","http://fed.hz.netease.com/git/nej2/src/util/flash/flash.html"]
+[DBUG] 2014-09-22 10:24:47.220	-	map http://fed.hz.netease.com/git/nej2/src/util/flash/platform/flash.js -> 1411352685256.js
+[INFO] 2014-09-22 10:24:47.223	-	downloading http://fed.hz.netease.com/git/nej2/src/util/flash/platform/flash.js
+[DBUG] 2014-09-22 10:24:47.227	-	map http://fed.hz.netease.com/git/nej2/src/util/flash/flash.html -> 1411352685257.js
+[INFO] 2014-09-22 10:24:47.234	-	downloading http://fed.hz.netease.com/git/nej2/src/util/flash/flash.html
+[DBUG] 2014-09-22 10:24:47.238	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/cache/cookie.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/util.js"]
+[DBUG] 2014-09-22 10:24:47.249	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/encode/json.js -> ["http://fed.hz.netease.com/git/nej2/src/util/encode/platform/json.js"]
+[DBUG] 2014-09-22 10:24:47.257	-	map http://fed.hz.netease.com/git/nej2/src/util/encode/platform/json.js -> 1411352685258.js
+[INFO] 2014-09-22 10:24:47.261	-	downloading http://fed.hz.netease.com/git/nej2/src/util/encode/platform/json.js
+[DBUG] 2014-09-22 10:24:47.267	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/cache/storage.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/util/event/event.js","http://fed.hz.netease.com/git/nej2/src/util/cache/platform/storage.js"]
+[DBUG] 2014-09-22 10:24:47.271	-	map http://fed.hz.netease.com/git/nej2/src/util/cache/platform/storage.js -> 1411352685259.js
+[INFO] 2014-09-22 10:24:47.275	-	downloading http://fed.hz.netease.com/git/nej2/src/util/cache/platform/storage.js
+[DBUG] 2014-09-22 10:24:47.281	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/message.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/message.js"]
+[DBUG] 2014-09-22 10:24:47.286	-	map http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/message.js -> 1411352685260.js
+[INFO] 2014-09-22 10:24:47.290	-	downloading http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/message.js
+[DBUG] 2014-09-22 10:24:47.299	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/page/page.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/page/base.js"]
+[DBUG] 2014-09-22 10:24:47.306	-	map http://fed.hz.netease.com/git/nej2/src/util/page/base.js -> 1411352685261.js
+[INFO] 2014-09-22 10:24:47.310	-	downloading http://fed.hz.netease.com/git/nej2/src/util/page/base.js
+[DBUG] 2014-09-22 10:24:47.372	-	dependency result: http://fed.hz.netease.com/git/nej2/src/ui/base.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/util/event.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js"]
+[DBUG] 2014-09-22 10:24:47.383	-	dependency result: http://fed.hz.netease.com/git/nej2/src/ui/pager/base.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/ui/base.js","http://fed.hz.netease.com/git/nej2/src/util/template/jst.js","http://fed.hz.netease.com/git/nej2/src/ui/pager/base.css","http://fed.hz.netease.com/git/nej2/src/ui/pager/base.html"]
+[DBUG] 2014-09-22 10:24:47.387	-	map http://fed.hz.netease.com/git/nej2/src/ui/pager/base.css -> 1411352685262.js
+[INFO] 2014-09-22 10:24:47.391	-	downloading http://fed.hz.netease.com/git/nej2/src/ui/pager/base.css
+[DBUG] 2014-09-22 10:24:47.395	-	map http://fed.hz.netease.com/git/nej2/src/ui/pager/base.html -> 1411352685263.js
+[INFO] 2014-09-22 10:24:47.400	-	downloading http://fed.hz.netease.com/git/nej2/src/ui/pager/base.html
+[DBUG] 2014-09-22 10:24:47.462	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/flash/platform/flash.js -> ["http://fed.hz.netease.com/git/nej2/src/base/platform.js"]
+[DBUG] 2014-09-22 10:24:47.470	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/flash/flash.html -> undefined
+[DBUG] 2014-09-22 10:24:47.475	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/encode/platform/json.js -> undefined
+[DBUG] 2014-09-22 10:24:47.496	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/cache/platform/storage.js -> null
+[DBUG] 2014-09-22 10:24:47.503	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/message.js -> null
+[DBUG] 2014-09-22 10:24:47.529	-	dependency result: http://fed.hz.netease.com/git/nej2/src/util/page/base.js -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/util/event.js"]
+[DBUG] 2014-09-22 10:24:47.575	-	dependency result: http://fed.hz.netease.com/git/nej2/src/ui/pager/base.css -> undefined
+[DBUG] 2014-09-22 10:24:47.583	-	dependency result: http://fed.hz.netease.com/git/nej2/src/ui/pager/base.html -> undefined
+[INFO] 2014-09-22 10:24:47.631	-	mask map -> {}
+[INFO] 2014-09-22 10:24:47.635	-	core css file list -> []
+[INFO] 2014-09-22 10:24:47.640	-	pg_ for E:/public_platform/NEJ Module Sample/src/html/app.html css file list -> ["E:/public_platform/NEJ Module Sample/src/css/template.css","E:/public_platform/NEJ Module Sample/src/css/app.css"]
+[INFO] 2014-09-22 10:24:47.644	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.css"]
+[INFO] 2014-09-22 10:24:47.648	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.css"]
+[INFO] 2014-09-22 10:24:47.652	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.css"]
+[INFO] 2014-09-22 10:24:47.656	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.css"]
+[INFO] 2014-09-22 10:24:47.660	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.css"]
+[INFO] 2014-09-22 10:24:47.664	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.css"]
+[INFO] 2014-09-22 10:24:47.669	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.css"]
+[INFO] 2014-09-22 10:24:47.673	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.css"]
+[INFO] 2014-09-22 10:24:47.678	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.css"]
+[INFO] 2014-09-22 10:24:47.683	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.css"]
+[INFO] 2014-09-22 10:24:47.688	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.css"]
+[INFO] 2014-09-22 10:24:47.692	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.css"]
+[INFO] 2014-09-22 10:24:47.696	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.css"]
+[INFO] 2014-09-22 10:24:47.701	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.css"]
+[INFO] 2014-09-22 10:24:47.705	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.css"]
+[INFO] 2014-09-22 10:24:47.709	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/tab/index.html css file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/tab/index.css"]
+[INFO] 2014-09-22 10:24:47.718	-	mask map -> {}
+[INFO] 2014-09-22 10:24:47.722	-	core js file list -> ["http://fed.hz.netease.com/git/nej2/src/base/global.js","http://fed.hz.netease.com/git/nej2/src/base/platform/util.js","http://fed.hz.netease.com/git/nej2/src/base/klass.js","http://fed.hz.netease.com/git/nej2/src/base/util.js","http://fed.hz.netease.com/git/nej2/src/base/platform/config.js","http://fed.hz.netease.com/git/nej2/src/base/config.js","http://fed.hz.netease.com/git/nej2/src/base/constant.js","http://fed.hz.netease.com/git/nej2/src/base/chain.js","http://fed.hz.netease.com/git/nej2/src/base/platform.js","http://fed.hz.netease.com/git/nej2/src/base/platform/event.js","http://fed.hz.netease.com/git/nej2/src/base/event.js","http://fed.hz.netease.com/git/nej2/src/base/platform/element.js","http://fed.hz.netease.com/git/nej2/src/base/element.js","http://fed.hz.netease.com/git/nej2/src/util/event.js","http://fed.hz.netease.com/git/nej2/src/util/event/event.js","http://fed.hz.netease.com/git/nej2/src/util/timer/platform/animation.js","http://fed.hz.netease.com/git/nej2/src/util/timer/animation.js","http://fed.hz.netease.com/git/nej2/src/util/history/platform/history.js","http://fed.hz.netease.com/git/nej2/src/util/history/history.js","http://fed.hz.netease.com/git/nej2/src/util/template/trimpath.js","http://fed.hz.netease.com/git/nej2/src/util/template/jst.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/loader.js","http://fed.hz.netease.com/git/nej2/src/util/cache/cookie.js","http://fed.hz.netease.com/git/nej2/src/util/encode/platform/json.js","http://fed.hz.netease.com/git/nej2/src/util/encode/json.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/proxy.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/platform/xhr.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/xhr.js","http://fed.hz.netease.com/git/nej2/src/util/flash/platform/flash.js","http://fed.hz.netease.com/git/nej2/src/util/flash/flash.html","http://fed.hz.netease.com/git/nej2/src/util/flash/flash.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/flash.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/message.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/message.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/frame.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/proxy/upload.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/platform/xdr.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/xdr.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/text.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/platform/html.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/html.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/style.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/loader/script.js","http://fed.hz.netease.com/git/nej2/src/util/ajax/tag.js","http://fed.hz.netease.com/git/nej2/src/util/template/tpl.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/node.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/util.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/group.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dsp/single.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/dispatcher.js","http://fed.hz.netease.com/git/nej2/src/util/dispatcher/module.js","E:/public_platform/NEJ Module Sample/src/javascript/module/module.js","http://fed.hz.netease.com/git/nej2/src/util/tab/view.js","http://fed.hz.netease.com/git/nej2/src/util/cache/platform/storage.js","http://fed.hz.netease.com/git/nej2/src/util/cache/storage.js","http://fed.hz.netease.com/git/nej2/src/util/cache/cache.js","http://fed.hz.netease.com/git/nej2/src/util/cache/list.js","http://fed.hz.netease.com/git/nej2/src/util/cache/abstract.js","E:/public_platform/NEJ Module Sample/src/javascript/cache/cache.js","E:/public_platform/NEJ Module Sample/src/javascript/cache/blog.js","http://fed.hz.netease.com/git/nej2/src/ui/base.js","http://fed.hz.netease.com/git/nej2/src/ui/item/item.js","http://fed.hz.netease.com/git/nej2/src/ui/item/list.js","http://fed.hz.netease.com/git/nej2/src/ui/pager/base.css","http://fed.hz.netease.com/git/nej2/src/ui/pager/base.html","http://fed.hz.netease.com/git/nej2/src/ui/pager/base.js","http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.base.js","http://fed.hz.netease.com/git/nej2/src/util/page/base.js","http://fed.hz.netease.com/git/nej2/src/util/page/page.js","http://fed.hz.netease.com/git/nej2/src/ui/pager/pager.js","http://fed.hz.netease.com/git/nej2/src/util/list/module.js"]
+[INFO] 2014-09-22 10:24:47.733	-	pg_ for E:/public_platform/NEJ Module Sample/src/html/app.html js file list -> ["js-code-1411352685191","js-code-1411352685192"]
+[INFO] 2014-09-22 10:24:47.740	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html js file list -> ["http://fed.hz.netease.com/git/nej2/src/util/list/page.js","E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.js"]
+[INFO] 2014-09-22 10:24:47.754	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.js"]
+[INFO] 2014-09-22 10:24:47.758	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.js"]
+[INFO] 2014-09-22 10:24:47.762	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.js"]
+[INFO] 2014-09-22 10:24:47.768	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html js file list -> ["http://fed.hz.netease.com/git/nej2/src/util/list/waterfall.js","E:/public_platform/NEJ Module Sample/src/javascript/cache/tag.js","E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.js"]
+[INFO] 2014-09-22 10:24:47.773	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.js"]
+[INFO] 2014-09-22 10:24:47.777	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.js"]
+[INFO] 2014-09-22 10:24:47.783	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.js"]
+[INFO] 2014-09-22 10:24:47.788	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.js"]
+[INFO] 2014-09-22 10:24:47.792	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.js"]
+[INFO] 2014-09-22 10:24:47.798	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.js"]
+[INFO] 2014-09-22 10:24:47.802	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.js"]
+[INFO] 2014-09-22 10:24:47.806	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.js"]
+[INFO] 2014-09-22 10:24:47.810	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.js"]
+[INFO] 2014-09-22 10:24:47.815	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.js"]
+[INFO] 2014-09-22 10:24:47.819	-	tp_ for E:/public_platform/NEJ Module Sample/src/html/module/tab/index.html js file list -> ["E:/public_platform/NEJ Module Sample/src/html/module/tab/index.js"]
+[INFO] 2014-09-22 10:24:47.823	-	OBF-0 -> merge source code
+[INFO] 2014-09-22 10:24:48.56	-	OBF-1 -> merge AST
+[INFO] 2014-09-22 10:24:48.60	-	OBF-2 -> compress source code
+[WARN] 2014-09-22 10:24:48.216	-	Dropping unused function argument _r [core:203,31]
+[WARN] 2014-09-22 10:24:48.226	-	Dropping unused function argument _this [core:634,36]
+[WARN] 2014-09-22 10:24:48.275	-	Dropping unused function argument _r [core:417,32]
+[WARN] 2014-09-22 10:24:48.284	-	Dropping unused function argument m [core:1809,29]
+[WARN] 2014-09-22 10:24:48.290	-	Dropping unused function argument _r [core:1743,32]
+[WARN] 2014-09-22 10:24:48.294	-	Dropping unused function argument _f [core:1743,29]
+[WARN] 2014-09-22 10:24:48.302	-	Dropping unused function argument _r [core:1834,32]
+[WARN] 2014-09-22 10:24:48.307	-	Dropping unused function argument _f [core:1834,29]
+[WARN] 2014-09-22 10:24:48.312	-	Dropping unused function argument _o [core:1834,26]
+[WARN] 2014-09-22 10:24:48.321	-	Dropping unused function argument _r [core:1928,32]
+[WARN] 2014-09-22 10:24:48.325	-	Dropping unused function argument _f [core:1928,29]
+[WARN] 2014-09-22 10:24:48.330	-	Dropping unused function argument _o [core:1928,26]
+[WARN] 2014-09-22 10:24:48.344	-	Dropping unused function argument _r [core:2075,29]
+[WARN] 2014-09-22 10:24:48.349	-	Dropping unused function argument _f [core:2075,26]
+[WARN] 2014-09-22 10:24:48.353	-	Dropping unused function argument _o [core:2075,23]
+[WARN] 2014-09-22 10:24:48.361	-	Dropping unused function argument _r [core:2263,31]
+[WARN] 2014-09-22 10:24:48.366	-	Dropping unused function argument _f [core:2263,28]
+[WARN] 2014-09-22 10:24:48.370	-	Dropping unused function argument _o [core:2263,25]
+[WARN] 2014-09-22 10:24:48.386	-	Dropping unused function argument _r [core:2378,41]
+[WARN] 2014-09-22 10:24:48.391	-	Dropping unused function argument _f [core:2378,38]
+[WARN] 2014-09-22 10:24:48.411	-	Dropping unused function argument _r [core:3163,31]
+[WARN] 2014-09-22 10:24:48.415	-	Dropping unused function argument _f [core:3163,28]
+[WARN] 2014-09-22 10:24:48.457	-	Side effects in initialization of unused variable _seed [core:5191,0]
+[WARN] 2014-09-22 10:24:48.466	-	Dropping unused function argument _r [core:3537,43]
+[WARN] 2014-09-22 10:24:48.470	-	Dropping unused function argument _f [core:3537,40]
+[WARN] 2014-09-22 10:24:48.492	-	Dropping unused function argument _r [core:6226,44]
+[WARN] 2014-09-22 10:24:48.499	-	Dropping unused function argument _r [core:6549,28]
+[WARN] 2014-09-22 10:24:48.503	-	Dropping unused function argument _f [core:6549,25]
+[WARN] 2014-09-22 10:24:48.507	-	Dropping unused function argument _o [core:6549,22]
+[WARN] 2014-09-22 10:24:48.511	-	Dropping unused function argument _r [core:6582,31]
+[WARN] 2014-09-22 10:24:48.516	-	Dropping unused function argument _f [core:6582,28]
+[WARN] 2014-09-22 10:24:48.520	-	Dropping unused function argument _o [core:6582,25]
+[WARN] 2014-09-22 10:24:48.524	-	Dropping unused function argument _hash [core:6648,28]
+[WARN] 2014-09-22 10:24:48.532	-	Dropping unused function argument _href [core:6721,33]
+[WARN] 2014-09-22 10:24:48.551	-	Dropping unused function argument _r [core:6653,45]
+[WARN] 2014-09-22 10:24:48.556	-	Dropping unused function argument _f [core:6653,42]
+[WARN] 2014-09-22 10:24:48.560	-	Dropping unused function argument _o [core:6653,39]
+[WARN] 2014-09-22 10:24:48.604	-	Dropping unused function argument _r [core:7424,41]
+[WARN] 2014-09-22 10:24:48.609	-	Dropping unused function argument _f [core:7424,38]
+[WARN] 2014-09-22 10:24:48.613	-	Dropping unused function argument _o [core:7424,35]
+[WARN] 2014-09-22 10:24:48.621	-	Dropping unused function argument _error [core:7832,31]
+[WARN] 2014-09-22 10:24:48.632	-	Dropping unused function argument i [core:7985,17]
+[WARN] 2014-09-22 10:24:48.637	-	Dropping unused function argument _r [core:7596,44]
+[WARN] 2014-09-22 10:24:48.645	-	Dropping unused function argument _r [core:7997,32]
+[WARN] 2014-09-22 10:24:48.649	-	Dropping unused function argument _f [core:7997,29]
+[WARN] 2014-09-22 10:24:48.659	-	Dropping unused function argument _r [core:8079,51]
+[WARN] 2014-09-22 10:24:48.664	-	Dropping unused function argument _r [core:8290,25]
+[WARN] 2014-09-22 10:24:48.668	-	Dropping unused function argument _f [core:8290,22]
+[WARN] 2014-09-22 10:24:48.673	-	Dropping unused function argument _o [core:8290,19]
+[WARN] 2014-09-22 10:24:48.681	-	Dropping unused function argument _r [core:8300,40]
+[WARN] 2014-09-22 10:24:48.686	-	Dropping unused function argument _r [core:8460,28]
+[WARN] 2014-09-22 10:24:48.690	-	Dropping unused function argument _f [core:8460,25]
+[WARN] 2014-09-22 10:24:48.694	-	Dropping unused function argument _o [core:8460,22]
+[WARN] 2014-09-22 10:24:48.706	-	Dropping unused function argument _r [core:8472,55]
+[WARN] 2014-09-22 10:24:48.711	-	Dropping unused function argument _f [core:8472,52]
+[WARN] 2014-09-22 10:24:48.716	-	Dropping unused function argument _o [core:8472,49]
+[WARN] 2014-09-22 10:24:48.722	-	Dropping unused function argument _list [core:8720,31]
+[WARN] 2014-09-22 10:24:48.726	-	Dropping unused function argument _index [core:8720,24]
+[WARN] 2014-09-22 10:24:48.733	-	Dropping unused function argument _r [core:8645,40]
+[WARN] 2014-09-22 10:24:48.737	-	Dropping unused function argument _f [core:8645,37]
+[WARN] 2014-09-22 10:24:48.741	-	Dropping unused function argument _o [core:8645,34]
+[WARN] 2014-09-22 10:24:48.747	-	Dropping unused function argument _r [core:8762,25]
+[WARN] 2014-09-22 10:24:48.751	-	Dropping unused function argument _f [core:8762,22]
+[WARN] 2014-09-22 10:24:48.757	-	Dropping unused function argument _r [core:8804,38]
+[WARN] 2014-09-22 10:24:48.761	-	Dropping unused function argument _f [core:8804,35]
+[WARN] 2014-09-22 10:24:48.768	-	Dropping unused function argument _r [core:8899,46]
+[WARN] 2014-09-22 10:24:48.772	-	Dropping unused function argument _f [core:8899,43]
+[WARN] 2014-09-22 10:24:48.776	-	Dropping unused function argument _o [core:8899,40]
+[WARN] 2014-09-22 10:24:48.784	-	Dropping unused function argument _error [core:9143,17]
+[WARN] 2014-09-22 10:24:48.791	-	Side effects in initialization of unused variable _headers [core:9155,0]
+[WARN] 2014-09-22 10:24:48.797	-	Dropping unused function argument _r [core:9016,51]
+[WARN] 2014-09-22 10:24:48.801	-	Dropping unused function argument _f [core:9016,48]
+[WARN] 2014-09-22 10:24:48.806	-	Dropping unused function argument _r [core:9202,41]
+[WARN] 2014-09-22 10:24:48.810	-	Dropping unused function argument _f [core:9202,38]
+[WARN] 2014-09-22 10:24:48.815	-	Dropping unused function argument _o [core:9202,35]
+[WARN] 2014-09-22 10:24:48.823	-	Dropping unused function argument _r [core:9222,44]
+[WARN] 2014-09-22 10:24:48.828	-	Dropping unused function argument _r [core:9582,37]
+[WARN] 2014-09-22 10:24:48.833	-	Dropping unused function argument _f [core:9582,34]
+[WARN] 2014-09-22 10:24:48.837	-	Dropping unused function argument _o [core:9582,31]
+[WARN] 2014-09-22 10:24:48.842	-	Dropping unused function argument _r [core:9635,28]
+[WARN] 2014-09-22 10:24:48.847	-	Dropping unused function argument _f [core:9635,25]
+[WARN] 2014-09-22 10:24:48.851	-	Dropping unused function argument _o [core:9635,22]
+[WARN] 2014-09-22 10:24:48.856	-	Dropping unused function argument _r [core:9646,37]
+[WARN] 2014-09-22 10:24:48.860	-	Dropping unused function argument _f [core:9646,34]
+[WARN] 2014-09-22 10:24:48.866	-	Dropping unused function argument _r [core:9721,34]
+[WARN] 2014-09-22 10:24:48.870	-	Dropping unused function argument _f [core:9721,31]
+[WARN] 2014-09-22 10:24:48.874	-	Dropping unused function argument _o [core:9721,28]
+[WARN] 2014-09-22 10:24:48.879	-	Dropping unused function argument _r [core:9757,34]
+[WARN] 2014-09-22 10:24:48.884	-	Dropping unused function argument _f [core:9757,31]
+[WARN] 2014-09-22 10:24:48.888	-	Dropping unused function argument _o [core:9757,28]
+[WARN] 2014-09-22 10:24:48.893	-	Dropping unused function argument _r [core:9816,45]
+[WARN] 2014-09-22 10:24:48.897	-	Dropping unused function argument _f [core:9816,42]
+[WARN] 2014-09-22 10:24:48.901	-	Dropping unused function argument _o [core:9816,39]
+[WARN] 2014-09-22 10:24:48.918	-	Dropping unused function argument _r [core:10031,54]
+[WARN] 2014-09-22 10:24:48.922	-	Dropping unused function argument _f [core:10031,51]
+[WARN] 2014-09-22 10:24:48.933	-	Dropping unused function argument _r [core:10556,38]
+[WARN] 2014-09-22 10:24:48.937	-	Dropping unused function argument _f [core:10556,35]
+[WARN] 2014-09-22 10:24:48.941	-	Dropping unused function argument _o [core:10556,32]
+[WARN] 2014-09-22 10:24:48.960	-	Dropping unused function argument _r [core:10782,36]
+[WARN] 2014-09-22 10:24:48.974	-	Dropping unused function argument _r [core:10981,52]
+[WARN] 2014-09-22 10:24:48.978	-	Dropping unused function argument _f [core:10981,49]
+[WARN] 2014-09-22 10:24:48.985	-	Dropping unused function argument _r [core:11314,39]
+[WARN] 2014-09-22 10:24:48.990	-	Dropping unused function argument _f [core:11314,36]
+[WARN] 2014-09-22 10:24:49.16	-	Dropping unused function argument _r [core:11488,72]
+[WARN] 2014-09-22 10:24:49.26	-	Dropping unused function argument _r [core:12691,45]
+[WARN] 2014-09-22 10:24:49.33	-	Dropping unused function argument _r [core:13062,30]
+[WARN] 2014-09-22 10:24:49.37	-	Dropping unused function argument _f [core:13062,27]
+[WARN] 2014-09-22 10:24:49.43	-	Dropping unused function argument _r [core:13103,41]
+[WARN] 2014-09-22 10:24:49.48	-	Dropping unused function argument _f [core:13103,38]
+[WARN] 2014-09-22 10:24:49.52	-	Dropping unused function argument _o [core:13103,35]
+[WARN] 2014-09-22 10:24:49.57	-	Dropping unused function argument _r [core:13207,25]
+[WARN] 2014-09-22 10:24:49.64	-	Dropping unused function argument _r [core:13256,41]
+[WARN] 2014-09-22 10:24:49.68	-	Dropping unused function argument _f [core:13256,38]
+[WARN] 2014-09-22 10:24:49.72	-	Dropping unused function argument _o [core:13256,35]
+[WARN] 2014-09-22 10:24:49.100	-	Dropping unused function argument _lkey [core:14579,44]
+[WARN] 2014-09-22 10:24:49.110	-	Dropping unused function argument _r [core:13815,38]
+[WARN] 2014-09-22 10:24:49.115	-	Dropping unused function argument _r [core:14845,35]
+[WARN] 2014-09-22 10:24:49.120	-	Dropping unused function argument _r [core:15100,31]
+[WARN] 2014-09-22 10:24:49.124	-	Dropping unused function argument _f [core:15100,28]
+[WARN] 2014-09-22 10:24:49.128	-	Dropping unused function argument _o [core:15100,25]
+[WARN] 2014-09-22 10:24:49.135	-	Dropping unused function argument _r [core:15127,36]
+[WARN] 2014-09-22 10:24:49.140	-	Dropping unused function argument _f [core:15127,33]
+[WARN] 2014-09-22 10:24:49.147	-	Dropping unused function argument _r [core:15201,45]
+[WARN] 2014-09-22 10:24:49.153	-	Dropping unused function argument _r [core:15441,35]
+[WARN] 2014-09-22 10:24:49.158	-	Dropping unused function argument _data [core:15705,26]
+[WARN] 2014-09-22 10:24:49.164	-	Dropping unused function argument _r [core:15625,36]
+[WARN] 2014-09-22 10:24:49.168	-	Dropping unused function argument _f [core:15625,33]
+[WARN] 2014-09-22 10:24:49.172	-	Dropping unused function argument _o [core:15625,30]
+[WARN] 2014-09-22 10:24:49.189	-	Dropping unused function argument _r [core:16052,44]
+[WARN] 2014-09-22 10:24:49.200	-	Dropping unused function argument _r [core:16504,41]
+[WARN] 2014-09-22 10:24:49.204	-	Dropping unused function argument _f [core:16504,38]
+[WARN] 2014-09-22 10:24:49.208	-	Dropping unused function argument _o [core:16504,35]
+[WARN] 2014-09-22 10:24:49.223	-	Dropping unused function argument _options [core:17345,32]
+[WARN] 2014-09-22 10:24:49.239	-	Dropping unused function argument _r [core:16809,65]
+[WARN] 2014-09-22 10:24:49.246	-	Dropping unused function argument _limit [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html:172,51]
+[WARN] 2014-09-22 10:24:49.253	-	Dropping unused function argument _limit [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html:255,39]
+[WARN] 2014-09-22 10:24:49.258	-	Dropping unused function argument _limit [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html:281,40]
+[WARN] 2014-09-22 10:24:49.262	-	Dropping unused function argument _offset [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html:281,32]
+[WARN] 2014-09-22 10:24:49.267	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html:1,37]
+[WARN] 2014-09-22 10:24:49.272	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html:1,34]
+[WARN] 2014-09-22 10:24:49.276	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html:1,31]
+[WARN] 2014-09-22 10:24:49.283	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html:300,48]
+[WARN] 2014-09-22 10:24:49.288	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list/index.html:300,45]
+[WARN] 2014-09-22 10:24:49.295	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.html:1,46]
+[WARN] 2014-09-22 10:24:49.301	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list.box/index.html:1,43]
+[WARN] 2014-09-22 10:24:49.307	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.html:1,53]
+[WARN] 2014-09-22 10:24:49.312	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.html:1,50]
+[WARN] 2014-09-22 10:24:49.317	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/list.tag/index.html:1,47]
+[WARN] 2014-09-22 10:24:49.322	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.html:1,46]
+[WARN] 2014-09-22 10:24:49.327	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.html:1,43]
+[WARN] 2014-09-22 10:24:49.332	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/tab/index.html:1,40]
+[WARN] 2014-09-22 10:24:49.350	-	Dropping unused function argument _limit [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html:419,39]
+[WARN] 2014-09-22 10:24:49.358	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html:491,37]
+[WARN] 2014-09-22 10:24:49.362	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html:491,34]
+[WARN] 2014-09-22 10:24:49.367	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html:536,49]
+[WARN] 2014-09-22 10:24:49.371	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html:536,46]
+[WARN] 2014-09-22 10:24:49.376	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/blog/tag/index.html:536,43]
+[WARN] 2014-09-22 10:24:49.381	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.html:1,42]
+[WARN] 2014-09-22 10:24:49.385	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.html:1,39]
+[WARN] 2014-09-22 10:24:49.389	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/blog/index.html:1,36]
+[WARN] 2014-09-22 10:24:49.394	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.html:1,42]
+[WARN] 2014-09-22 10:24:49.398	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.html:1,39]
+[WARN] 2014-09-22 10:24:49.402	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/blog.list/index.html:1,36]
+[WARN] 2014-09-22 10:24:49.407	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.html:1,42]
+[WARN] 2014-09-22 10:24:49.411	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.html:1,39]
+[WARN] 2014-09-22 10:24:49.416	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/setting/index.html:1,36]
+[WARN] 2014-09-22 10:24:49.421	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.html:1,42]
+[WARN] 2014-09-22 10:24:49.425	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.html:1,39]
+[WARN] 2014-09-22 10:24:49.429	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/setting.account/index.html:1,36]
+[WARN] 2014-09-22 10:24:49.434	-	Dropping unused function argument _options [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.html:17,32]
+[WARN] 2014-09-22 10:24:49.439	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.html:1,42]
+[WARN] 2014-09-22 10:24:49.443	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.html:1,39]
+[WARN] 2014-09-22 10:24:49.448	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/layout/system/index.html:1,36]
+[WARN] 2014-09-22 10:24:49.454	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.html:1,46]
+[WARN] 2014-09-22 10:24:49.459	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.html:1,43]
+[WARN] 2014-09-22 10:24:49.464	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/account.tab/index.html:1,40]
+[WARN] 2014-09-22 10:24:49.469	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.html:1,42]
+[WARN] 2014-09-22 10:24:49.473	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.html:1,39]
+[WARN] 2014-09-22 10:24:49.476	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/edu/index.html:1,36]
+[WARN] 2014-09-22 10:24:49.483	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.html:1,45]
+[WARN] 2014-09-22 10:24:49.487	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.html:1,42]
+[WARN] 2014-09-22 10:24:49.491	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/permission/index.html:1,39]
+[WARN] 2014-09-22 10:24:49.496	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.html:1,45]
+[WARN] 2014-09-22 10:24:49.501	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.html:1,42]
+[WARN] 2014-09-22 10:24:49.505	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/profile/index.html:1,39]
+[WARN] 2014-09-22 10:24:49.510	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.html:1,46]
+[WARN] 2014-09-22 10:24:49.515	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.html:1,43]
+[WARN] 2014-09-22 10:24:49.519	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/setting/tab/index.html:1,40]
+[WARN] 2014-09-22 10:24:49.524	-	Dropping unused function argument _r [tp_E:/public_platform/NEJ Module Sample/src/html/module/tab/index.html:1,46]
+[WARN] 2014-09-22 10:24:49.528	-	Dropping unused function argument _f [tp_E:/public_platform/NEJ Module Sample/src/html/module/tab/index.html:1,43]
+[WARN] 2014-09-22 10:24:49.533	-	Dropping unused function argument _o [tp_E:/public_platform/NEJ Module Sample/src/html/module/tab/index.html:1,40]
+[INFO] 2014-09-22 10:24:49.537	-	OBF-3 -> mangle local variables
+[INFO] 2014-09-22 10:24:49.845	-	OBF-4 -> try mangle nej api
+[INFO] 2014-09-22 10:24:50.118	-	OBF-5 -> output minified code
+[INFO] 2014-09-22 10:24:50.207	-	OBF-6 -> obfuscate done
+[INFO] 2014-09-22 10:24:50.213	-	output E:/public_platform/NEJ Module Sample/src/deploy/names.json
+[INFO] 2014-09-22 10:24:50.240	-	output E:/public_platform/NEJ Module Sample/pub/core.js
+[INFO] 2014-09-22 10:24:50.334	-	output E:/public_platform/NEJ Module Sample/pub/pp_app.js
+[INFO] 2014-09-22 10:24:50.341	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_blog_list_index.js
+[INFO] 2014-09-22 10:24:50.351	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_blog_list.box_index.js
+[INFO] 2014-09-22 10:24:50.358	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_blog_list.tag_index.js
+[INFO] 2014-09-22 10:24:50.366	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_blog_tab_index.js
+[INFO] 2014-09-22 10:24:50.372	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_blog_tag_index.js
+[INFO] 2014-09-22 10:24:50.383	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_layout_blog_index.js
+[INFO] 2014-09-22 10:24:50.390	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_layout_blog.list_index.js
+[INFO] 2014-09-22 10:24:50.397	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_layout_setting_index.js
+[INFO] 2014-09-22 10:24:50.403	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_layout_setting.account_index.js
+[INFO] 2014-09-22 10:24:50.410	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_layout_system_index.js
+[INFO] 2014-09-22 10:24:50.417	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_setting_account.tab_index.js
+[INFO] 2014-09-22 10:24:50.424	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_setting_edu_index.js
+[INFO] 2014-09-22 10:24:50.431	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_setting_permission_index.js
+[INFO] 2014-09-22 10:24:50.438	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_setting_profile_index.js
+[INFO] 2014-09-22 10:24:50.444	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_setting_tab_index.js
+[INFO] 2014-09-22 10:24:50.451	-	output E:/public_platform/NEJ Module Sample/pub/tp_module_tab_index.js
+[INFO] 2014-09-22 10:24:50.461	-	output E:/public_platform/NEJ Module Sample/pub/app.html
+[INFO] 2014-09-22 10:24:50.473	-	output E:/public_platform/NEJ Module Sample/pub/module/blog/list/index.html
+[INFO] 2014-09-22 10:24:50.480	-	output E:/public_platform/NEJ Module Sample/pub/module/blog/list.box/index.html
+[INFO] 2014-09-22 10:24:50.487	-	output E:/public_platform/NEJ Module Sample/pub/module/blog/list.tag/index.html
+[INFO] 2014-09-22 10:24:50.493	-	output E:/public_platform/NEJ Module Sample/pub/module/blog/tab/index.html
+[INFO] 2014-09-22 10:24:50.500	-	output E:/public_platform/NEJ Module Sample/pub/module/blog/tag/index.html
+[INFO] 2014-09-22 10:24:50.507	-	output E:/public_platform/NEJ Module Sample/pub/module/blog.html
+[INFO] 2014-09-22 10:24:50.514	-	output E:/public_platform/NEJ Module Sample/pub/module/layout/blog/index.html
+[INFO] 2014-09-22 10:24:50.521	-	output E:/public_platform/NEJ Module Sample/pub/module/layout/blog.list/index.html
+[INFO] 2014-09-22 10:24:50.527	-	output E:/public_platform/NEJ Module Sample/pub/module/layout/setting/index.html
+[INFO] 2014-09-22 10:24:50.534	-	output E:/public_platform/NEJ Module Sample/pub/module/layout/setting.account/index.html
+[INFO] 2014-09-22 10:24:50.540	-	output E:/public_platform/NEJ Module Sample/pub/module/layout/system/index.html
+[INFO] 2014-09-22 10:24:50.548	-	output E:/public_platform/NEJ Module Sample/pub/module/layout.html
+[INFO] 2014-09-22 10:24:50.554	-	output E:/public_platform/NEJ Module Sample/pub/module/setting/account.tab/index.html
+[INFO] 2014-09-22 10:24:50.561	-	output E:/public_platform/NEJ Module Sample/pub/module/setting/edu/index.html
+[INFO] 2014-09-22 10:24:50.568	-	output E:/public_platform/NEJ Module Sample/pub/module/setting/permission/index.html
+[INFO] 2014-09-22 10:24:50.574	-	output E:/public_platform/NEJ Module Sample/pub/module/setting/profile/index.html
+[INFO] 2014-09-22 10:24:50.583	-	output E:/public_platform/NEJ Module Sample/pub/module/setting/tab/index.html
+[INFO] 2014-09-22 10:24:50.590	-	output E:/public_platform/NEJ Module Sample/pub/module/setting.html
+[INFO] 2014-09-22 10:24:50.598	-	output E:/public_platform/NEJ Module Sample/pub/module/tab/index.html
+[INFO] 2014-09-22 10:24:50.639	-	release done! view release log E:/public_platform/NEJ Module Sample/src/deploy/20140922.102444715.txt
